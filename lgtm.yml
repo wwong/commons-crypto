@@ -1,0 +1,8 @@
+extraction:
+    java:
+        prepare:
+            packages:
+                - libssl-dev
+        after_prepare:
+            - export VERSION=$(git describe)
+
